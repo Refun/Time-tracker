@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mile tarcker App</title>
+
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.transitions.css">
+
+
+<!--custom css-->
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<!-- Important Owl stylesheet -->
+
+
+<!--font-awesome-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+  <!--Homepage-->
+   <div data-role="page" id="home" theme="d">
+     <header data-role="header" data-theme="b">
+       <h1>Time Tracker</h1>
+     </header>
+ 
+     <div data-role="navbar">
+        <ul>
+           <li><a href="#home" data-transiton="none" data-icon="home">Home</a></li>
+          <li><a href="#add" data-transiton="none" data-icon="plus">Add Details</a></li>
+        </ul>
+     </div>
+  
+     <div data-role="content">
+        <h3>Welcome to Timetracker app</h3>
+        <p>With the app you can track all of your  study times regularly</p>
+
+        <h3>Your latest Trackings</h3>
+        <ul id="stats" data-role="listview" data-filter="true" data-filter-placeholder="filter runs by date or distance" data-inset="true">
+        <button id="clearRuns" onclick="confirm('Are you sure?')" data-theme="b">Clear Total history</button>
+        </ul>
+     </div>
+
+     <footer data-role="footer" data-theme="b">
+         <h4>Timetracker &copy; 2014</h4>
+     </footer>
+  </div>
+
+  
+<!--add page-->
+   <div data-role="page" id="add" theme="d">
+     <header data-role="header" data-theme="b">
+       <h1>Time Tracker</h1>
+     </header>
+ 
+     <div data-role="navbar">
+        <ul>
+           <li><a href="#home" data-transiton="none" data-icon="home">Home</a></li>
+          <li><a href="#add" data-transiton="none" data-icon="plus">Add Details</a></li>
+        </ul>
+     </div>
+  
+     <div data-role="content">
+        <h3>Add Details</h3>
+        <form id="addForm">
+         <label for="addMiles">Enter minutes:</label>
+          <input type="text"  id="addMiles">
+
+          <label for="addDates">Enter Date</label>
+          <input type="text" data-role="date" class="date" id="addDate" data-inline="true">
+
+          <button id="submitAdd" class="ui-btn ui-btn-b ui-corder-all">Submit</button>
+        </form>
+     </div>
+
+     <footer data-role="footer" data-theme="b">
+         <h4>Timetracker &copy; 2014</h4>
+     </footer>
+  </div>
+
+  <!--Edit page-->
+  <div data-role="page" id="edit" theme="d">
+     <header data-role="header" data-theme="b">
+       <h1>Time Tracker</h1>
+     </header>
+ 
+     <div data-role="navbar">
+        <ul>
+           <li><a href="#home" data-transiton="none" data-icon="home">Home</a></li>
+          <li><a href="#home" data-transiton="none" data-icon="plus">Add Details</a></li>
+        </ul>
+     </div>
+  
+     <div data-role="content">
+        <h3>Edit Run</h3>
+        <form id="addForm">
+          <label for="addMiles">Enter miles:</label>
+          <input type="text"  id="editMiles">
+
+          <label for="addDates">Enter Date</label>
+          <input type="text" data-role="date" class="date" id="editDate" data-inline="true">
+
+          <button id="submitEdit" class="ui-btn ui-btn-b ui-corder-all">Update</button>
+        </form>
+        
+     </div>
+
+     <footer data-role="footer" data-theme="b">
+         <h4>Timetracker &copy; 2014</h4>
+     </footer>
+  </div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.4.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/jquery.easing.min.js"></script>
+     <script src="js/isotope.min.js"></script>
+     <script src="js/owl.carousel.js"></script>
+     <script src="js/jquery.fancybox.pack.js"></script>
+     <script src="js/main.js"></script>
+	<script type="text/javascript"> 
+     $(function(){
+       $('.date').each(function(){
+          $(this).datepicker();
+       });
+
+     });
+
+  </script>
+</body>
+</html>

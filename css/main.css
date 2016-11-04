@@ -1,0 +1,46 @@
+body{
+	text-align: center;
+}
+
+ul{
+	display: block;
+}
+
+.controls{
+	float:right;
+}
+
+#stats p{
+	color:#2ad;
+}
+
+.ui-page-theme-b ,html .ui-bar-b,html .ui-body-b,html body .ui-group-theme-b,html head+body{
+	 background-color: #337ab7
+}
+.ui-btn:hover,  .ui-btn:hover, .ui-btn:hover,  .ui-btn:hover,  .ui-btn.ui-btn-b:hover{
+	    background-color: #337ab7
+}
+
+#clearRuns{
+	background-color: #337ab7
+}
+
+#clearRuns:hover{
+	background-color: blue;
+}
+
+#submitAdd{
+	background-color: #337ab7
+}
+
+#submitAdd:hover{
+	background-color: blue;
+}
+
+#submitEdit{
+	background-color: #337ab7
+}
+
+#submitEdit:hover{
+	background-color: blue;
+}
